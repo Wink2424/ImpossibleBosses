@@ -1,0 +1,21 @@
+
+MathewHD
+1 month ago (edited)
+I had the same problem, as it seems most of the problems are depended of your current Game Version and some other small issued. What i did to fix this was:
+
+! Important don't forget to make a backup, because if you fuck up at any time during this your project is completely fucked and you have to restart.
+
+1. Use Unity Version 2018.4.11f
+2. Then you follow the tutorial until you imported the new Player Blender File
+3. Then you click on the Player Blender File, so that it opens it for you in Blender
+4. Then you choose all Collections that are greyed out in the Top-Right of the Screen(Pants, Boots, Hair etc.) with ALT and Right Click
+5. Right-Click again, Visibility, Then you have to activate, Enable in Viewport and Enable in Renderer
+6. Then Leave Blender and Save Changes
+7. Your Player Model should now be fixed
+
+
+If you have any issues you can comment under this or ask me via. my Email: mathew.gmuer@gmail.com
+
+3
+
+

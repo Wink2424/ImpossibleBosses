@@ -1,2 +1,2 @@
-Base path: D:/ass/Editor/Data
+Base path: 'D:/ass/Editor/Data', plugins path 'D:/ass/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
