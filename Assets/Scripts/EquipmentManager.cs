@@ -13,7 +13,7 @@ public class EquipmentManager : MonoBehaviour {
         instance = this;
     }
 
-
+    
     #endregion;
 
     public Equipment[] defaultItems;
@@ -48,7 +48,13 @@ public class EquipmentManager : MonoBehaviour {
             
         }
 
+        if (onEquipmentChanged != null )
+        {
+            onEquipmentChanged.Invoke(newItem, oldItem); //added this if statement addressing issue with blend shapes stuck at 0
+        }
+
         SetEquipmentBlendShapes(newItem, 100);
+        
 
         currentEquipment[slotIndex] = newItem;
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newItem.mesh);
@@ -71,6 +77,7 @@ public class EquipmentManager : MonoBehaviour {
             Equipment oldItem = currentEquipment[slotIndex];
             SetEquipmentBlendShapes(oldItem, 0);
             
+
             inventory.Add(oldItem);
 
             currentEquipment[slotIndex] = null;
@@ -98,6 +105,7 @@ public class EquipmentManager : MonoBehaviour {
         foreach (EquipmentMeshRegion blendShape in item.coveredMeshRegions)
         {
             targetMesh.SetBlendShapeWeight((int)blendShape, weight);
+            Debug.Log("BLEND SHAPES CHANGED " + weight);// debugging to see when set equipment blend shapes is called
         }
     }
 

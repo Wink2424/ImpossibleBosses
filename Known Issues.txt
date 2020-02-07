@@ -1,0 +1,10 @@
+Known Issues
+
+1: Player blend shape on the body object does not update to 100 when equipping Items.
+
+
+
+2 RESOLVED - WAD WITH CONSOLE COLLAPSE FEATURE: Players cannot interact with an object once they have interacted for the first time.
+hasInteracted on the interactable script updates properly
+isFocus updates properly
+
