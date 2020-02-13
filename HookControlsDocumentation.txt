@@ -1,0 +1,16 @@
+This is what I have for the hook controls
+
+1: Detect Key (Space) and Capture Mouse position
+2: Create and move transform of hook toward raycast transform.position
+    2a: leave graphics trail of hook path
+3: Detect if collision occured, and if so it must richochet (theres some kind of raycast method for doing this I found)
+    3a: capture position object collision occurred for return path
+4: Detect for hitting a player object, apply initial damage, 
+    4a: Restrict player objects movement while hooked.
+    4b: Slow users speed while hooking
+    4c: reverse hook direction
+    4d: send player object and hook to most recent return path or player if next
+5: if nothing was hit in cast, return hook after distance from player -> return path[] -> current position meets maximum hook length variable
+6: when hook has reached interactable range, destroy hook object
+    6a: return player movement controls
+also for 3a: capture position of object collision when occurred, not super clear there

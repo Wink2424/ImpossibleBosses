@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     public LayerMask movementMask;
 
+    
     Camera cam;
     PlayerMotor motor;
 	// Use this for initialization
@@ -57,6 +58,8 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        
         
     }
     void SetFocus(Interactable newFocus)
