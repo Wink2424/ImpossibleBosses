@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HookManager : MonoBehaviour
 {
-    public Vector3 offset = new Vector3(0, .6f);
+    public Vector3 offset = new Vector3(0, .3f);
     public GameObject activeHook;
     public GameObject HookObject;
 
