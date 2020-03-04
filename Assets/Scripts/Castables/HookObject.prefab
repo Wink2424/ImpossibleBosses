@@ -140,4 +140,5 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 256
-  hook: {fileID: 6175659806208069832}
+  bouncePositions: []
+  hook: {fileID: 8237879691873087641}

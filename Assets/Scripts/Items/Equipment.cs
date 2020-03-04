@@ -11,6 +11,7 @@ public class Equipment : Item {
 
     public int armorModifier;
     public int damageModifier;
+    public int hookLengthModifier;
 
     public override void Use()
     {

@@ -17,12 +17,14 @@ public class PlayerStats : CharacterStats
 
             armor.AddModifier(newItem.armorModifier);
             damage.AddModifier(newItem.damageModifier);
+            hookRange.AddModifier(newItem.hookLengthModifier);
         }
 
         if (oldItem != null)
         {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
+            hookRange.RemoveModifier(oldItem.hookLengthModifier);
         }
     }
 

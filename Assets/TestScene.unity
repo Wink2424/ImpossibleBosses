@@ -3124,6 +3124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 1.5, z: 0}
+  activeHook: {fileID: 0}
   HookObject: {fileID: 7160073620148265572, guid: 77da6006abc52264a9546cbc2bce64da,
     type: 3}
 --- !u!1001 &824611073
@@ -6891,6 +6892,8 @@ MonoBehaviour:
     baseValue: 5
   armor:
     baseValue: 0
+  hookRange:
+    baseValue: 0
 --- !u!114 &1788902075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7822,6 +7825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136121079469684466, guid: 33c7feaffc760f847970082171f7f368,
+        type: 3}
+      propertyPath: hookRange.baseValue
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33c7feaffc760f847970082171f7f368, type: 3}

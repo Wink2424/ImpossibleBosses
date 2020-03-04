@@ -105,7 +105,7 @@ public class EquipmentManager : MonoBehaviour {
         foreach (EquipmentMeshRegion blendShape in item.coveredMeshRegions)
         {
             targetMesh.SetBlendShapeWeight((int)blendShape, weight);
-            Debug.Log("BLEND SHAPES CHANGED " + weight);// debugging to see when set equipment blend shapes is called
+           // Debug.Log("BLEND SHAPES CHANGED " + weight);// debugging to see when set equipment blend shapes is called
         }
     }
 
